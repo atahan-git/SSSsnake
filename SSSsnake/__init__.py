@@ -38,6 +38,9 @@ class SSSsnake(Snake):
     # the SSS turtle can only move in units!
     def turnRight(self):
         self._rotateTo(self._rotation + self._rotationAmount)
+        
+    def turnLeft(self):
+        self._rotateTo(self._rotation - self._rotationAmount)
     
     def move(self):
         newX = self._x + round(self._unitSize * math.sin(math.radians(self._rotation)), 1)
