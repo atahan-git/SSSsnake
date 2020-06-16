@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="SSSsnake", # Replace with your own username
-    version="0.0.6",
+    version="0.0.7",
     author="Atahan Ozturk",
     author_email="atahan012000@gmail.com",
     description="IPythonDisplayTurtles edited for my schools python courses",
@@ -13,7 +13,6 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/atahan-git/IPythonDisplayTurtle",
     packages=['SSSsnake'],
-    package_data={'SSSsnake': ['levels/*.js']},
     classifiers=[
         "Framework :: IPython",
         "Intended Audience :: Education",

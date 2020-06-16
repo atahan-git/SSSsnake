@@ -46,15 +46,6 @@ class SSSsnake(Snake):
         newX = self._x + round(self._unitSize * math.sin(math.radians(self._rotation)), 1)
         newY = self._y - round(self._unitSize * math.cos(math.radians(self._rotation)), 1)
         self._moveTo(newX, newY)
-        
-    def display(self):
-        super().display(410,210, False)
-        #print((ReadFile(self._levelId) + "\n" + ReadFileLib('AtahansTurtle.js')))
-        display(HTML('<script type="text/paperscript" canvas="canv%s">%s</script>'% \
-                     (self._randHash, (ReadFile("level tools.js") + "\n" + ReadFile(self._levelId) + "\n" + ReadFileLib('AtahansTurtle.js')))))
-    
-    def loadLevel(self, levelId):
-        self._levelId = "turtle level " + str(levelId) + ".js"
 
 class SSSfirstsnake (SSSsnake):
     def turnLeft (self):
