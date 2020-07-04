@@ -15,7 +15,7 @@ How to use:
 
 from SSSsnake import SSSsnake 
 ### VVV this segment can be hidden from students!
-snake = SSSsnake(homeX = 5+25/2, homeY = 5+25/2 + 25*7) 
+snake = SSSsnake(homeX = 0, homeY = 7) 
 def houseAtXY(x,y):
     return [[x-1,y,3],[x+1,y,1],[x+2,y,4],[x+2,y+1,0],[x+2,y+2,0],[x+2,y+3,5],[x+1,y+3,1],[x,y+3,1],[x-1,y+3,2],[x-1,y+2,0],[x-1,y+1,0]]
 walls = [];doors = [];walls.extend(houseAtXY(2,0));doors.append([2,0,1]);walls.extend(houseAtXY(7,1));doors.append([7,1,1]);walls.extend(houseAtXY(12,2));doors.append([12,2,1])
