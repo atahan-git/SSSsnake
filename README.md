@@ -2,9 +2,11 @@
 IPythonDisplayTurtle with addded functionality for our schools python classes.
 
 How to install from a terminal/command prompt:
+
 	pip install SSSsnake
 	
 To install from a jupyter notebook cell:
+
 	!pip install SSSsnake
 
 How to use:

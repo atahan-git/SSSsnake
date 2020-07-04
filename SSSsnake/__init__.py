@@ -17,7 +17,7 @@ class SSSsnake(Snake):
     _rotationAmount = 90
     
     
-    def __init__(self, homeX = 30, homeY = 30):
+    def __init__(self, homeX = 0, homeY = 0):
         self._turtleMainColor = "#00A651"
         self._turtleAccentColor = "#FFF600"
         self._speed = 5
@@ -26,11 +26,12 @@ class SSSsnake(Snake):
         self._pencolor = "red"
         self._penwidth = 3
         self._rotation = 90
+        self._gridmode = True
+        self._gridsize = self._unitSize
         self._x = homeX
         self._y = homeY
         self._canvWidth = 410
         self._canvHeigth = 210
-        self._gridSize = self._unitSize
         self._actions = []
         self._appendCurrentState();
         

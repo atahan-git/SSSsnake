@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="SSSsnake", # Replace with your own username
-    version="0.0.12",
+    version="0.0.13",
     author="Atahan Ozturk",
     author_email="atahan012000@gmail.com",
     description="IPythonDisplayTurtles edited for my school's python courses",
