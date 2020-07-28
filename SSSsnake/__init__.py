@@ -44,8 +44,8 @@ class SSSsnake(Snake):
         self.setheading(self._rotation - self._rotationAmount)
     
     def forward(self):
-        newX = self._x + round(self._gridSize * math.sin(math.radians(self._rotation)), 1)
-        newY = self._y - round(self._gridSize * math.cos(math.radians(self._rotation)), 1)
+        newX = self._x + round(1 * math.sin(math.radians(self._rotation)), 1)
+        newY = self._y - round(1 * math.cos(math.radians(self._rotation)), 1)
         self.goto(newX, newY)
 
 class SSSfirstsnake (SSSsnake):
